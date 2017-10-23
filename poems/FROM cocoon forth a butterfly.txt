@@ -1,4 +1,4 @@
-FROM cocoon forth a butterfly
+from cocoon forth a butterfly
 
 As lady from her door
 

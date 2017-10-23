@@ -1,4 +1,4 @@
-EACH life converges to some centre
+each life converges to some centre
 
 Expressed or still;
 

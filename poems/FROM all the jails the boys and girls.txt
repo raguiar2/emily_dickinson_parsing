@@ -1,4 +1,4 @@
-FROM all the jails the boys and girls
+from all the jails the boys and girls
 
   Ecstatically leap,—
 
