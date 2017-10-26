@@ -7,15 +7,13 @@ ROOT_URL = 'http://www.bartleby.com/113/'
 HTML_SUFFIX = '.html'
 #comments to get poem between
 def main():
-	poemcounts = {1000:1}
-	#poemcounts = {1000:138, 2000:111, 3000:57, 4000:141, 5000:146}
+	#poemcounts = {1000:1}
+	poemcounts = {1000:138, 2000:111, 3000:57, 4000:141, 5000:146}
 	for chpaterstart in poemcounts:
 		for idxstart in range(1,poemcounts[chpaterstart]+1):
 			poemnumber = str(chpaterstart+idxstart)
 			url = ROOT_URL+poemnumber+HTML_SUFFIX
-			print('url')
 			r = requests.get(url)
-			print(r.content)
 			regex = '<!-- BEGIN CHAPTER -->(.*?)<!-- END CHAPTER -->'
 			poem = re.findall(regex, str(r.content))[0]
 			poemsoup = soup(poem, "html5lib")
